@@ -77,7 +77,7 @@
                         </div>
                         <div class="ms-3 name">
                             <h5 class="font-bold">Team Rocket</h5>
-                            <button type="button" class="btn btn-outline-warning" style="float:right"><a th:href="@{/Logout}">Cerrar Sesión</a></button>
+                            <button type="button" class="btn btn-outline-warning" style="float:right"><a th:href="@{/Login}">Cerrar Sesión</a></button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
         <th>Empleados</th>
         <th>Movimientos</th>
         <th>Editar</th>
-        <th>Eliminar</th>
+
 
     </tr>
         <div class="buttons">
@@ -109,7 +109,7 @@
         <td><button type="button" class="btn btn-outline-info"><a th:href="@{/Enterprise/{id}/Employee (id=${enterprise.id})}">Ver Empleados</a></button></td>
         <td><button href="#" type="buttons" class="btn btn-outline-info"><a th:href="@{/Enterprise/{id}/Transaction (id=${enterprise.id})}">Ver Movimientos</a></button></td>
         <td><button type="button" class="btn btn-outline-info"><a th:href="@{/EditEnterprise/{id}(id=${enterprise.id})}">Editar</a></button></td>
-        <td><button type="button" class="btn btn-outline-info"><a th:href="@{/DeleteEnterprise/{id}(id=${enterprise.id})}">Eliminar</a></button></td>
+
     </tr>
         </div>
 

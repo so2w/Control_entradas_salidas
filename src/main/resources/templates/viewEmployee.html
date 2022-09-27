@@ -78,7 +78,7 @@
             </div>
             <div class="ms-3 name">
               <h5 class="font-bold">Team Rocket</h5>
-              <button type="button" class="btn btn-outline-warning" style="float:right"><a th:href="@{/Logout}">Cerrar Sesión</a></button>
+              <button type="button" class="btn btn-outline-warning" style="float:right"><a th:href="@{/Login}">Cerrar Sesión</a></button>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
       <th>Telefono</th>
       <th>Movimientos</th>
       <th>Editar</th>
-      <th>Eliminar</th>
+
 
     </tr>
     <div class="buttons">
@@ -106,7 +106,7 @@
         <td th:text="${employee.email}"></td>
         <td><button href="#" type="buttons" class="btn btn-outline-info"><a th:href="@{/Enterprise/{id}/Transaction (id=${employee.id})}">Ver Movimientos</a></button></td>
         <td><button type="button" class="btn btn-outline-info"><a th:href="@{/EditEmployee/{id}(id=${employee.id})}">Editar</a></button></td>
-        <td><button type="button" class="btn btn-outline-info"><a th:href="@{/DeleteEmployee/{id}(id=${employee.id})}">Eliminar</a></button></td>
+
       </tr>
     </div>
 
