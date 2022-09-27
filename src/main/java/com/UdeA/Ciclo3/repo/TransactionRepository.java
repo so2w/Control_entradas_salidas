@@ -14,7 +14,7 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
     public abstract ArrayList<Transaction> findByEmployee (Long id);
 
     //procedimiento para filtrar movimientos por empresa
-    @Query (value = "select * from transaction where user_id in (select id from employee where enterprises_id = ?1)", nativeQuery = true)
+    @Query (value = "select * from transaction where user_id in (select id from employee where user_id = ?1)", nativeQuery = true)
     public abstract ArrayList<Transaction> findByEnterprise (Long id);
 
     //procedimiento para ver la sumatoria de los movimientos
