@@ -96,7 +96,7 @@ public class transactionController {
     @GetMapping("/Employee/{id}/Transaction")
     public String transactionByEmployee(@PathVariable("id")Long id, Model model){
         List<Transaction> movelist = transactionService.getByEmployee(id);
-        model.addAttribute("movelist",movelist);
+        model.addAttribute("transList",movelist);
         Long sumAmount = transactionService.sumByEmployee(id);
         model.addAttribute("SumAmount", sumAmount);
         return "viewTransaction";
