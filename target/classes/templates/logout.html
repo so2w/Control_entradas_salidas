@@ -1,0 +1,37 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Ciclo3 Final - Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/assets/css/bootstrap.css}"/>
+
+  <link rel="stylesheet" th:href="@{/assets/vendors/iconly/bold.css}"/>
+
+  <link rel="stylesheet" th:href="@{/assets/vendors/perfect-scrollbar/perfect-scrollbar.css}"/>
+  <link rel="stylesheet" th:href="@{/assets/vendors/bootstrap-icons/bootstrap-icons.css}"/>
+  <link rel="stylesheet" th:href="@{/assets/css/app.css}"/>
+  <link rel="shortcut icon" th:href="@{/assets/images/favicon.svg}" type="image/x-icon">
+  <link rel="stylesheet" th:href="@{assets/css/style.css}"/>
+  <link rel="stylesheet" th:href="@{assets/css/app.css}"/>
+
+</head>
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<div class="form" id="app">
+  <form method="post" action="/Logout" th:object="${logout}">
+    <h2>Sesión Finalizada</h2>
+    <div class="input-box">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+    <div class="input-box">
+      <button type="button" class="btn btn-outline-info" style="bottom"><a th:href="@{/Login}">- Ingresar -</a></button>
+
+    </div>
+
+  </form>
+</div>
+</body>
+</html>
